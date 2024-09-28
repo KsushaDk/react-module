@@ -1,15 +1,11 @@
-import { Demo1, Demo2, Demo3, Demo4, Demo5, Demo6 } from './components/hooksDemoTask';
-import './App.css';
+import { Signin, Signup } from './pages';
+import './styles/App.scss';
 
 function App() {
   return (
     <>
-      <Demo5 />
-      <Demo6 />
-      <Demo1 />
-      <Demo2 />
-      <Demo3 />
-      <Demo4 />
+      <Signin onSubmit={data => console.log('SIGNIN', data)} />
+      <Signup onSubmit={data => console.log('SIGNUP', data)} />
     </>
   );
 }
